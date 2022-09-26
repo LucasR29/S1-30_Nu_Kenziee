@@ -1,0 +1,28 @@
+.money {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--grey-2-light);
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.money div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.money span {
+  color: var(--pink-2);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.money h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.money p {
+  font-size: 15px;
+}

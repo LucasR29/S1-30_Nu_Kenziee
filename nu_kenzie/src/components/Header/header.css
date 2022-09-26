@@ -1,0 +1,36 @@
+.header {
+  box-sizing: border-box;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 5px var(--grey-shadow-header);
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0px 100px;
+  background-color: white;
+}
+
+.header h1 {
+  font-weight: 800;
+  color: var(--pink-1);
+}
+
+.header h1 span {
+  color: var(--grey-4-black);
+}
+
+.header button {
+  padding: 10.5px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 1160px) {
+  .header {
+    padding: 0px 30px;
+  }
+}

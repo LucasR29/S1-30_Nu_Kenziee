@@ -1,0 +1,88 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--grey-4-black);
+}
+
+.main_info {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../Assets/illustration.svg);
+  background-color: var(--grey-4-black);
+  background-repeat: no-repeat;
+  background-position: 75%;
+}
+
+.main_info h2 {
+  font-weight: 800;
+  color: var(--pink-1);
+}
+
+.main_info h2 span {
+  color: white;
+}
+
+.main_info h1 {
+  color: white;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.main_info div {
+  display: flex;
+  height: 85%;
+  width: 45%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main_info button {
+  height: 52.8px;
+  border-radius: 10px;
+  background-color: var(--pink-2);
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  width: 300px;
+}
+
+.main_info div section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 347px;
+  color: white;
+}
+
+@media (max-width: 1060px) {
+  .main_info div {
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1580px) {
+  .main_info {
+    background-position: 95%;
+  }
+}
+
+@media (max-height: 600px) {
+  .main_info {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 760px) {
+  .main_info {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: none;
+  }
+  .main_info div {
+    width: 100%;
+    align-items: center;
+  }
+}

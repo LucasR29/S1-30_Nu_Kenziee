@@ -1,0 +1,80 @@
+.form {
+  height: 363px;
+  width: 351px;
+  margin-top: 5vh;
+  border: 1px solid var(--grey-2-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 38px 24.5px;
+  border-radius: 5px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  height: 52.8px;
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form_values {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+
+.form_values div {
+  width: 162.22px;
+}
+
+.form select {
+  height: 52.8px;
+  border-radius: 10px;
+  background-color: var(--grey-1-white);
+  border: none;
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+.form select:hover {
+  -webkit-appearance: none;
+}
+
+.form select:focus {
+  -webkit-appearance: none;
+  outline: none;
+  background-color: var(--grey-2-light);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.form button {
+  height: 52.8px;
+  border-radius: 10px;
+  background-color: var(--pink-2);
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.form_values_input {
+  background-image: url(../../Assets/R$.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+@media (max-width: 430px) {
+  .form {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}

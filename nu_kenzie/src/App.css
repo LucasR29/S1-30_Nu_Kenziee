@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  font-family: "Nunito", sans-serif;
+  --pink-1: #fd377e;
+  --pink-2: #e34981;
+  --green: #03b898;
+  --grey-1-white: #f8f9fa;
+  --grey-2-light: #e9ecef;
+  --grey-3-normal: #868e96;
+  --grey-4-black: #212529;
+  --grey-shadow-header: rgb(134, 142, 150, 0.2);
+}
+
+input {
+  background-color: var(--grey-1-white);
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+span {
+  color: var(--grey-3-normal);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.App {
+  height: 92vh;
+  width: calc(100vw - 220px);
+  margin: 0 auto;
+  padding-top: 8vh;
+  display: flex;
+  gap: 30px;
+}
+
+.noTransactions {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 90%;
+  margin-top: 5vh;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.noTransactions p {
+  text-align: center;
+}
+
+.noTransactions div {
+  background-image: url(./Assets/NoCard.svg);
+  height: 100%;
+  width: 600px;
+  background-repeat: no-repeat;
+  background-position: center 5%;
+  background-size: contain;
+  padding-right: 10px;
+}
+
+@media (max-width: 1160px) {
+  .App {
+    width: 95%;
+  }
+}
+
+@media (max-width: 990px) {
+  .App {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 430px) {
+  .form_box {
+    width: 100%;
+  }
+}
